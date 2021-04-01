@@ -1,0 +1,269 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <title>Gardening Quiz</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="intro py-3 bg-white text-center">
+      <div class="container">
+        <h2 class="text-success display-3 my-4">Gardening Quiz</h2>
+      </div>
+    </div>
+
+    <!-- Result Section  -->
+    <div class="result py-4 d-none bg-light text-center">
+        <div class="container lead">
+            <p class="display-6">You've Scored: <span class="text-success display-4 p-3">0%</span></p>
+            <p class="text-dark great">You've got a green thumb!</p>
+        </div>
+    </div>
+
+    <!-- Quiz Section  -->
+    <div class="quiz py-4 bg-success">
+      <div class="container">
+        <h2 class="my-5 display-6 text-white">
+          Let's text your gardening knowledge!
+        </h2>
+        <!-- Form Begins -->
+        <form class="quiz-form text-light">
+          <!-- First Question  -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              1. What is the technical term for planting seeds?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" value="A" checked />
+              <label class="form-check-label">Germination</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" value="B" />
+              <label class="form-check-label">Sowing</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" value="C" />
+              <label class="form-check-label">Xeriscaping</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q1" value="D" />
+              <label class="form-check-label">Fertilizing</label>
+            </div>
+          </div>
+          <!-- Second Question -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              2. Which of these nutrients do plants not get from the soil?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q2" value="A" checked />
+              <label class="form-check-label">Phosphorus </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q2" value="B" />
+              <label class="form-check-label">Nitrogen</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q2" value="C" />
+              <label class="form-check-label">Potassium</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q2" value="D" />
+              <label class="form-check-label">Carbon</label>
+            </div>
+          </div>
+          <!-- Third Question -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              3. All of the following plants are from the same family EXCEPT...
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q3" value="A" checked />
+              <label class="form-check-label">Potatoes </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q3" value="B" />
+              <label class="form-check-label">Radishes</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q3" value="C" />
+              <label class="form-check-label">Tomatoes</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q3" value="D" />
+              <label class="form-check-label">Eggplants</label>
+            </div>
+          </div>
+          <!-- Fourth Question -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              4. Which of the following is the term for a plant that continues
+              to grow season after season for at least two years?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q4" value="A" checked />
+              <label class="form-check-label">Annual </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q4" value="B" />
+              <label class="form-check-label">Biennial</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q4" value="C" />
+              <label class="form-check-label">Perennial</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q4" value="D" />
+              <label class="form-check-label">Seasonal</label>
+            </div>
+          </div>
+          <!-- Fifth Question -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              5. Which of these is a perennial plant?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q5" value="A" checked />
+              <label class="form-check-label">Strawberry </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q5" value="B" />
+              <label class="form-check-label">Pea</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q5" value="C" />
+              <label class="form-check-label">Watermelon</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q5" value="D" />
+              <label class="form-check-label">Maize</label>
+            </div>
+          </div>
+          <!-- Sixth Question -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              6. One of these foods is not from the rose family — do you know
+              which one?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q6" value="A" checked />
+              <label class="form-check-label">Almonds </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q6" value="B" />
+              <label class="form-check-label">Grapes</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q6" value="C" />
+              <label class="form-check-label">Raspberries</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q6" value="D" />
+              <label class="form-check-label">Grapes</label>
+            </div>
+          </div>
+          <!-- Seventh Question -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              7. Which of these insects is not considered beneficial to a
+              garden?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q7" value="A" checked />
+              <label class="form-check-label">Ladybugs </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q7" value="B" />
+              <label class="form-check-label">Spiders</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q7" value="C" />
+              <label class="form-check-label">Bumblebees</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q7" value="D" />
+              <label class="form-check-label">Grasshoppers</label>
+            </div>
+          </div>
+          <!-- Eight Question -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              8. Which of these is a shade plant?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q8" value="A" checked />
+              <label class="form-check-label">Fern </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q8" value="B" />
+              <label class="form-check-label">Peony</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q8" value="C" />
+              <label class="form-check-label">Daylily</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q8" value="D" />
+              <label class="form-check-label">Lavender</label>
+            </div>
+          </div>
+          <!-- Ninth Question -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              9. Which of the following is not a reason why mulch is used?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q9" value="A" checked />
+              <label class="form-check-label">To dry out wet soil </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q9" value="B" />
+              <label class="form-check-label">To prevent weeds </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q9" value="C" />
+              <label class="form-check-label">To keep the soil cool </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q9" value="D" />
+              <label class="form-check-label">To retain moisture in soil</label>
+            </div>
+          </div>
+          <!-- Tenth Question -->
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              10. Which of these is NOT a winter crop?
+            </p>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q10" value="A" checked />
+              <label class="form-check-label">Cabbage </label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q10" value="B" />
+              <label class="form-check-label">Parsnip</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q10" value="C" />
+              <label class="form-check-label">Leek</label>
+            </div>
+            <div class="form-check my-2 text-white-50">
+              <input type="radio" name="q10" value="D" />
+              <label class="form-check-label">Tomato</label>
+            </div>
+          </div>
+          <div class="d-grid gap-2 col-4 mx-auto">
+              <input type="submit" class="btn btn-light btn-lg">
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
